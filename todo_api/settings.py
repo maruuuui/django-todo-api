@@ -134,3 +134,6 @@ CORS_ALLOWED_ORIGINS = [
 REST_FRAMEWORK = {
     'DATETIME_FORMAT': "%Y/%m/%d %H:%M:%S"
 }
+
+# URL末尾にスラッシュが無い場合のリダイレクトを抑止する
+APPEND_SLASH = False
