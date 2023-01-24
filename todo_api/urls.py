@@ -20,9 +20,8 @@ from rest_framework import routers
 from todo import views
 
 router = routers.DefaultRouter()
-router.register(r'', views.TodoViewSet)
+router.register(r"", views.TodoViewSet)
 urlpatterns = [
-    path('', include(router.urls)),
-
-    path('admin/', admin.site.urls),
+    path("", include(router.urls)),
+    path("admin/", admin.site.urls),
 ]
