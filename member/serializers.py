@@ -12,4 +12,3 @@ class ProjectRecordSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProjectRecord
         fields = ["id", "start_date","end_date","project_abstract","project_detail", "member",]
-        depth = 1
