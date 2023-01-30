@@ -26,5 +26,6 @@ router.register(r"projectDetail", member_views.ProjectRecordViewSet)
 router.register(r"", views.TodoViewSet)
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("report/download", member_views.csv_download_view),
     path("", include(router.urls)),
 ]
