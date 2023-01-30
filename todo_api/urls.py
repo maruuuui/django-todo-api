@@ -17,8 +17,8 @@ from django.contrib import admin
 from django.urls import include, path
 from rest_framework import routers
 
-from todo import views
 from member import views as member_views
+from todo import views
 
 router = routers.DefaultRouter()
 router.register(r"member", member_views.MemberViewSet)
