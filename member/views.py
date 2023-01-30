@@ -11,7 +11,7 @@ class MemberViewSet(viewsets.ModelViewSet):
 
 
 class ProjectRecordViewSet(viewsets.ModelViewSet):
-    queryset = ProjectRecord.objects.all()
+    queryset = ProjectRecord.objects.all().order_by("-start_date")
     serializer_class = ProjectRecordSerializer
 
     # POST
